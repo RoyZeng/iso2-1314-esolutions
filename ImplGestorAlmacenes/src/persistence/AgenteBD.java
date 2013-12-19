@@ -8,10 +8,12 @@ public class AgenteBD {
 	
 	
 	//SINGLETON 
-	public static AgenteBD instance;
-	public AgenteBD getInstance(){
-		if(instance==null)
+	private static AgenteBD instance;
+	public static AgenteBD getInstance(){
+		if(instance==null){
 			instance=new AgenteBD();
+			instance.connect();
+		}
 		return instance;
 	}
 	
@@ -22,8 +24,8 @@ public class AgenteBD {
 	String controlador = "com.mysql.jdbc.Driver";
 	Class.forName(controlador).newInstance();
 	// Conectamos con la BD
-	String url="jdbc:mysql://localhost/uoc";
-	String usuario="yo";
+	String url="jdbc:mysql://db4free.net/mercadona";
+	String usuario="mercadona";
 	String password="contraseña";
 	conexion = DriverManager.getConnection (url,usuario,password);
 		}catch(SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException e){
@@ -33,7 +35,7 @@ public class AgenteBD {
 		return success;
 	}
 	
-	private boolean executeQuery(String sentence){
+	public boolean executeQuery(String sentence){
 		boolean success=true;
 		try {
 			// Creamos una sentencia SQL
@@ -49,7 +51,7 @@ public class AgenteBD {
 		return success;
 	}
 	
-	private boolean close(){
+	public boolean close(){
 		boolean success=true;
 		try {
 			conexion.close();

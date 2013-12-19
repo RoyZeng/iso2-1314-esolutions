@@ -24,7 +24,7 @@ public class VentanaLogin extends JFrame
                label = new JLabel("");
                label.setBounds(33, 11, 410, 180);
                label.setHorizontalAlignment(SwingConstants.CENTER);
-               label.setIcon(new ImageIcon("C:\\Users\\Eimard\\Desktop\\mercadona.gif"));
+               label.setIcon(new ImageIcon("mercadona.gif"));
                getContentPane().add(label);
                Component verticalStrut = Box.createVerticalStrut(50);
                verticalStrut.setBounds(0, 0, 0, 0);

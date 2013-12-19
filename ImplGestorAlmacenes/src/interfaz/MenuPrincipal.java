@@ -77,7 +77,7 @@ public class MenuPrincipal {
 					}
 				});
 				Index.setLayout(null);
-				btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\Eimard\\workspace\\Hito1\\iconos\\Icono_ayuda.png"));
+				btnNewButton_2.setIcon(new ImageIcon("ayuda.png"));
 				Index.add(btnNewButton_2);
 			}
 			{
@@ -114,7 +114,7 @@ public class MenuPrincipal {
 			}
 			{
 				lblNewLabel = new JLabel("");
-				lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Eimard\\Desktop\\mercadona.gif"));
+				lblNewLabel.setIcon(new ImageIcon("mercadona.gif"));
 				lblNewLabel.setBounds(73, 27, 424, 179);
 				Index.add(lblNewLabel);
 			}
