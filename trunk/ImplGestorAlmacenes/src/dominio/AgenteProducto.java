@@ -2,6 +2,7 @@ package dominio;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import persistence.AgenteBD;
 
@@ -25,6 +26,21 @@ public class AgenteProducto {
 			ResultSet rs= AgenteBD.getInstance().executeQuery(sentence);
 			rs.first();
 			userRet=new Producto(Integer.parseInt(rs.getString(1)),rs.getString(2),Integer.parseInt(rs.getString(3)),rs.getString(4),rs.getString(5));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return userRet;
+	}
+	public ArrayList <Producto> consultAllProducto(String Id){
+		ArrayList <Producto> userRet = new ArrayList <Producto>();
+		String sentence="SELECT * FROM Producto;";
+		try {
+			ResultSet rs= AgenteBD.getInstance().executeQuery(sentence);
+			rs.first();
+			while(!rs.isAfterLast()){
+				userRet.add(new Producto(Integer.parseInt(rs.getString(1)),rs.getString(2),Integer.parseInt(rs.getString(3)),rs.getString(4),rs.getString(5)));
+				rs.next();
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
