@@ -1,4 +1,4 @@
-package aaa;
+package interfaz;
 
 import java.awt.EventQueue;
 
@@ -45,6 +45,10 @@ public class ConsultarProducto {
 	/**
 	 * Initialize the contents of the frame.
 	 */
+public void mostrar(){
+		
+		frame.setVisible(true);
+	}
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
@@ -54,7 +58,6 @@ public class ConsultarProducto {
 		frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
 		AgenteProducto p=new AgenteProducto();
 		ArrayList <dominio.Producto> prods = p.consultAllProducto();
-		Object obj[][]=new Object();
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {

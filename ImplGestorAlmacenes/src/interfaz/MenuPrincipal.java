@@ -1,15 +1,21 @@
 package interfaz;
 
+import MenuPrincipal;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JButton;
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
+
 import java.awt.Color;
+
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.JLabel;
@@ -19,7 +25,9 @@ import javax.swing.AbstractListModel;
 import javax.swing.JTree;
 import javax.swing.JScrollBar;
 import javax.swing.JComboBox;
+
 import java.awt.Choice;
+
 import javax.swing.JToolBar;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
@@ -109,6 +117,13 @@ public class MenuPrincipal {
 			}
 			{
 				btnConsultar = new JButton("Consultar Almacén");
+				btnConsultar.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent arg0) {
+						
+                        ConsultarProducto ventana1 = new ConsultarProducto();
+                        ventana1.main(null);
+					}
+				});
 				btnConsultar.setBounds(378, 261, 150, 23);
 				Index.add(btnConsultar);
 			}
