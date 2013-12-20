@@ -114,7 +114,7 @@ public class MenuPrincipal {
 			}
 			{
 				lblNewLabel = new JLabel("");
-				lblNewLabel.setIcon(new ImageIcon("mercadona.gif"));
+				lblNewLabel.setIcon(new ImageIcon("img/mercadona.gif"));
 				lblNewLabel.setBounds(73, 27, 424, 179);
 				Index.add(lblNewLabel);
 			}

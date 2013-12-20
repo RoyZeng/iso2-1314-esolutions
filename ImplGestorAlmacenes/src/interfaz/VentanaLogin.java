@@ -27,7 +27,7 @@ public class VentanaLogin extends JFrame
                label = new JLabel("");
                label.setBounds(33, 11, 410, 180);
                label.setHorizontalAlignment(SwingConstants.CENTER);
-               label.setIcon(new ImageIcon("mercadona.gif"));
+               label.setIcon(new ImageIcon("img/mercadona.gif"));
                getContentPane().add(label);
                Component verticalStrut = Box.createVerticalStrut(50);
                verticalStrut.setBounds(0, 0, 0, 0);
@@ -113,10 +113,10 @@ public class VentanaLogin extends JFrame
                       if( validarUsuario( txtUser.getText(), txtPass.getText() ) )    //enviar datos a validar
                       {
                           // Codigo para mostrar la ventana principal
+                          JOptionPane.showMessageDialog(null, "Bienvenido "+txtUser.getText());
                           setVisible(false);
                           MenuPrincipal ventana1 = new MenuPrincipal();
                           ventana1.main(null);
-
 
                       }
                       else
