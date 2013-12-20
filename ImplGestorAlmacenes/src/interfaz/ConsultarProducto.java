@@ -1,4 +1,4 @@
-package interfaz;
+package aaa;
 
 import java.awt.EventQueue;
 
@@ -54,13 +54,10 @@ public class ConsultarProducto {
 		frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
 		AgenteProducto p=new AgenteProducto();
 		ArrayList <dominio.Producto> prods = p.consultAllProducto();
-		
+		Object obj[][]=new Object();
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{new Integer(1), "aaa", "aaa", new Integer(3), null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
 			},
 			new String[] {
 				"Id", "Nombre", "Tipo", "Cantidad", "Fecha caducidad"
@@ -74,7 +71,10 @@ public class ConsultarProducto {
 			}
 		});
 		scrollPane.setViewportView(table);
-		
+		DefaultTableModel model = (DefaultTableModel) table.getModel();
+		for(int i=0;i<prods.size();i++){
+			model.addRow(new Object[]{new Integer(prods.get(i).getId()), prods.get(i).getNombre(), prods.get(i).getTipo(),new Integer(prods.get(i).getCantidad()),prods.get(i).getFecha()});
+		}
 		JToolBar toolBar = new JToolBar();
 		frame.getContentPane().add(toolBar, BorderLayout.NORTH);
 		
