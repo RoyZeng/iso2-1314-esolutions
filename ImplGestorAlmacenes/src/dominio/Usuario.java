@@ -1,7 +1,7 @@
 package dominio;
 
 public class Usuario {
-	String DNI,nombre,apellido1,apellido2,password;
+	private String DNI,nombre,apellido1,apellido2,password;
 
 	public Usuario (String DNI, String nombre, String apellido1,String apellido2,String pass){
 		this.DNI=DNI;
@@ -28,6 +28,16 @@ public class Usuario {
 	
 	public String getPassword() {
 		return password;
+	}
+	public boolean equals(Usuario user2){
+		boolean equals=true;
+		equals=getDNI().equals(user2.getDNI())&&equals;
+		equals=getNombre().equals(user2.getNombre())&&equals;
+		equals=getApellido1().equals(user2.getApellido1())&&equals;
+		equals=getApellido2().equals(user2.getApellido2())&&equals;
+		equals=getPassword().equals(user2.getPassword())&&equals;
+
+		return equals;
 	}
 
 }

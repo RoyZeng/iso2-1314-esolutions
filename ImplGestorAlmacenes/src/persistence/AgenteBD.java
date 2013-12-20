@@ -26,7 +26,7 @@ public class AgenteBD {
 	// Conectamos con la BD
 	String url="jdbc:mysql://db4free.net/mercadona";
 	String usuario="mercadona";
-	String password="contraseña";
+	String password="mercadona";
 	conexion = DriverManager.getConnection (url,usuario,password);
 		}catch(SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException e){
 			success=false;
@@ -35,20 +35,17 @@ public class AgenteBD {
 		return success;
 	}
 	
-	public boolean executeQuery(String sentence){
-		boolean success=true;
+	public ResultSet executeQuery(String sentence){
+		ResultSet res = null;
 		try {
 			// Creamos una sentencia SQL
 			Statement sentenciaSQL = conexion.createStatement();
 			// Ejecutamos la sentencia
-			ResultSet res = sentenciaSQL.executeQuery(sentence);
-			res.close();
-				sentenciaSQL.close();
+			res = sentenciaSQL.executeQuery(sentence);
 		} catch (SQLException e) {
-			success=false;
 			System.err.println("SQL CONEXION ERROR: "+e.toString());
 		}
-		return success;
+		return res;
 	}
 	
 	public boolean close(){

@@ -99,7 +99,7 @@ public class EliminarProducto {
 		}
 		{
 			lblNewLabel = new JLabel("");
-			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Eimard\\Desktop\\prod.png"));
+			lblNewLabel.setIcon(new ImageIcon("prod.png"));
 			lblNewLabel.setBounds(220, 26, 95, 97);
 			frame.getContentPane().add(lblNewLabel);
 		}

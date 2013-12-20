@@ -1,6 +1,9 @@
 package interfaz;
 
 import javax.swing.*;
+
+import dominio.AgenteUsuario;
+
 import java.io.*;
 import java.sql.*;
 import java.awt.Panel.*;
@@ -86,22 +89,10 @@ public class VentanaLogin extends JFrame
     {
         try
         {
-            //nombre de la BD: bdlogin
-             //nombre de la tabla: usuarios
-             //                             id      integer auto_increment not null     <--llave primaria
-             //                   campos:    usuario    char(25)
-             //                              password char(50)
-              
-            Connection unaConexion  = DriverManager.getConnection ("jdbc:mysql://localhost/bdlogin","root", "root");
-            // Preparamos la consulta
-            Statement instruccionSQL = unaConexion.createStatement();
-            ResultSet resultadosConsulta = instruccionSQL.executeQuery ("SELECT * FROM usuarios WHERE usuario='"+elUsr+"' AND password='"+ elPw+"'");
- 
-            if( resultadosConsulta.first() )        // si es valido el primer reg. hay una fila, tons el usuario y su pw existen
-                return true;        //usuario validado correctamente
-            else
-                return false;        //usuario validado incorrectamente
-                 
+        	boolean valido=false;
+            AgenteUsuario agentUser= new AgenteUsuario();
+            valido= agentUser.consultUsuario(elUsr).getPassword().equals(elPw); 
+            return valido;
         } catch (Exception e)
         {
             e.printStackTrace();
@@ -123,8 +114,8 @@ public class VentanaLogin extends JFrame
                       {
                           // Codigo para mostrar la ventana principal
                           setVisible(false);
-                          //VentanaPrincipal ventana1 = new VentanaPrincipal();
-                          //ventana1.mostrar();
+                          MenuPrincipal ventana1 = new MenuPrincipal();
+                          ventana1.main(null);
 
 
                       }

@@ -1,5 +1,8 @@
 package dominio;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import persistence.AgenteBD;
 
 public class AgenteProducto {
@@ -14,6 +17,18 @@ public class AgenteProducto {
 	public void removeProducto(Producto producto){
 		String sentence="DELETE FROM Producto WHERE Id="+producto.getId()+";";
 		AgenteBD.getInstance().executeQuery(sentence);
+	}
+	public Producto consultProducto(String Id){
+		Producto userRet = null;
+		String sentence="SELECT * FROM Producto WHERE Id='"+Id+"';";
+		try {
+			ResultSet rs= AgenteBD.getInstance().executeQuery(sentence);
+			rs.first();
+			userRet=new Producto(Integer.parseInt(rs.getString(1)),rs.getString(2),Integer.parseInt(rs.getString(3)),rs.getString(4),rs.getString(5));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return userRet;
 	}
 	
 }
