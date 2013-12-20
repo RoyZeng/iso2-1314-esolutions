@@ -31,7 +31,7 @@ public class AgenteProducto {
 		}
 		return userRet;
 	}
-	public ArrayList <Producto> consultAllProducto(String Id){
+	public ArrayList <Producto> consultAllProducto(){
 		ArrayList <Producto> userRet = new ArrayList <Producto>();
 		String sentence="SELECT * FROM Producto;";
 		try {

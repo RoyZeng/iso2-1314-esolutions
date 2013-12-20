@@ -1,6 +1,4 @@
-package aaa;
-
-import Producto;
+package interfaz;
 
 import java.awt.EventQueue;
 
@@ -13,6 +11,8 @@ import java.util.ArrayList;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JToolBar;
+
+import dominio.AgenteProducto;
 
 public class ConsultarProducto {
 
@@ -53,8 +53,8 @@ public class ConsultarProducto {
 		JScrollPane scrollPane = new JScrollPane();
 		frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
 		AgenteProducto p=new AgenteProducto();
-		ArrayList <Producto> prods = p.consultAllProducto();
-		Object [][] obj= 
+		ArrayList <dominio.Producto> prods = p.consultAllProducto();
+		
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
