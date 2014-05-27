@@ -85,7 +85,7 @@ public class VentanaLogin extends JFrame
     }   // fin de constructor
  
     // Metodo que conecta con el servidor MYSQL y valida los usuarios
-    boolean validarUsuario(String elUsr, String elPw)  throws IOException
+    public static boolean validarUsuario(String elUsr, String elPw)  throws IOException
     {
         try
         {

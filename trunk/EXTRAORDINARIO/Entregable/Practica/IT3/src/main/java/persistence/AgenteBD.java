@@ -24,9 +24,9 @@ public class AgenteBD {
 	String controlador = "com.mysql.jdbc.Driver";
 	Class.forName(controlador).newInstance();
 	// Conectamos con la BD
-	String url="jdbc:mysql://db4free.net/mercadona";
-	String usuario="mercadona";
-	String password="mercadona";
+	String url="jdbc:mysql:sql3.freemysqlhosting.net";
+	String usuario="sql341597";
+	String password="eT4%lL5!";
 	conexion = DriverManager.getConnection (url,usuario,password);
 		}catch(SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException e){
 			success=false;
