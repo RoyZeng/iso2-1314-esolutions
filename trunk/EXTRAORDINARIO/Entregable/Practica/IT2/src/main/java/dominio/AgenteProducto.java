@@ -8,7 +8,7 @@ import persistence.AgenteBD;
 
 public class AgenteProducto {
 	public void insertProducto(Producto producto){
-		String sentence="INSERT INTO Producto VALUES ("+producto.getNombre()+","+producto.getCantidad()+","+producto.getTipo()+","+producto.getFecha()+")";
+		String sentence="INSERT INTO Producto VALUES ('"+producto.getNombre()+"','"+producto.getCantidad()+"','"+producto.getTipo()+"','"+producto.getFecha()+"');";
 		AgenteBD.getInstance().executeQuery(sentence);
 	}
 	public void modifyProducto(Producto producto){
