@@ -11,7 +11,7 @@ import dominio.AgenteProducto;
 import dominio.Producto;
 
 
-public class TestDominio {
+public class TestDominioIt3 {
 
 	@Before
 	public void setUp() throws Exception {
@@ -19,8 +19,9 @@ public class TestDominio {
 
 
 	@Test
-	public void testAñadeProducto() throws IOException {
+	public void testEliminarProducto() throws IOException {
 		AgenteProducto agente =new AgenteProducto();
+		agente.insertProducto(new Producto(0,"nombre",1,"tipo","fecha"));
 		agente.removeProducto(new Producto(0,"nombre",1,"tipo","fecha"));
 		assertTrue(true);
 	}

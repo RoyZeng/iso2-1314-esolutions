@@ -24,7 +24,7 @@ public class AgenteBD {
 	String controlador = "com.mysql.jdbc.Driver";
 	Class.forName(controlador).newInstance();
 	// Conectamos con la BD
-	String url="jdbc:mysql:sql3.freemysqlhosting.net";
+	String url="jdbc:mysql://sql3.freemysqlhosting.net";
 	String usuario="sql341597";
 	String password="eT4%lL5!";
 	conexion = DriverManager.getConnection (url,usuario,password);
@@ -41,6 +41,7 @@ public class AgenteBD {
 			// Creamos una sentencia SQL
 			Statement sentenciaSQL = conexion.createStatement();
 			// Ejecutamos la sentencia
+			sentenciaSQL.executeQuery("USE sql341597;");
 			res = sentenciaSQL.executeQuery(sentence);
 		} catch (SQLException e) {
 			System.err.println("SQL CONEXION ERROR: "+e.toString());
