@@ -1,0 +1,33 @@
+public static boolean autentificarse(boolean entrar) {
+                String nombreUsuario, contrasena;
+                Scanner teclado = new Scanner(System.in);
+                teclado.useLocale(Locale.US);
+                System.out.println("Introduzca el nombre de usuario:");
+                nombreUsuario = teclado.next();
+                System.out.println("Introduzca la contraseña");
+                contrasena = teclado.next();
+                int numColumnas = 0;
+                
+                try{
+                        Agente.conectar();
+                        PreparedStatement sentencia = mBD.prepareStatement("SELECT Login, Password FROM Usuarios");
+                        ResultSet respuesta = sentencia.executeQuery();
+                        
+                    ResultSetMetaData rsmd = respuesta.getMetaData();
+                    numColumnas = rsmd.getColumnCount();
+                    
+                        //Vector basedatos = Agente.select("SELECT Login, Password FROM Usuarios");
+                        while(respuesta.next()){
+                                if (nombreUsuario.equals( respuesta.getString("Login"))){
+                                        if (contrasena.equals(respuesta.getString("Password"))){
+                                                entrar = true;
+                                        }
+                                }
+                        }
+                        Agente.desconectar();
+                        return entrar;
+                }catch (Exception e){
+                        System.out.println("Error en autenticación");
+                }
+                throw new UnsupportedOperationException();
+        }
