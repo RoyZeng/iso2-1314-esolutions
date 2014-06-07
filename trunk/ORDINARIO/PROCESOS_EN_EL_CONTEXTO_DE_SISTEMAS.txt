@@ -1,0 +1,287 @@
+
+
+
+
+PROCESOS DE SUMINISTRO
+-------------------------------------------------- 
+Actividades y tareas que el suministrador realiza. 
+Inicia con decisión de preparar una respuesta a una petición de un comprador.
+
+ 
+
+PROCESO DE ADQUISICION
+---------------------------------
+Define las actividades del adquiriente,es decir, la organización que adquiere un sistema,producto software o servicio software.
+El proceso comienza con la identificación de adquirir 
+un producto software.El proceso continúa con la preparación y publicación de propuestas, la selección de un proveedor 
+y la gestación del proceso de adquisición hasta la aceptación del producto software
+
+Este proceso consiste de las siguientes actividades:
+
+	inicio
+	Preparación de la solicitud de propuestas
+	Preparación y actualización del contrato
+	Seguimiento del proveedor
+	Aceptación y finalización
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+PROCESO DE GESTIÓN DE INFRAESTRUCTURAS
+----------------------------------------
+El Proceso de Infraestructura es un proceso para establecer y mantener la infraestructura que necesita cualquier
+ otro proceso del ciclo de vida. La infraestructura puede incluir hardware, software, herramientas, técnicas, normas e instalaciones
+ para el desarrollo, operación o mantenimiento.
+
+Este proceso consta de las siguientes actividades:
+
+	Implementación del proceso
+		Conviene que se defina y documente la infraestructura para cumplir los requerimientos del proceso que este emplea, considerando 
+		los procedimientos, normas, herramientas y técnicas aplicables
+
+	Establecimiento de la infraestructura
+		Conviene que se planifique y documente la configuración de la infraestructura. Se deberían considerar aspectos de funcionalidad, 
+		prestaciones, seguridad física y de acceso, disponibilidad, requerimientos de espacio, equipos, costos y limitaciones de tiempo.
+
+	Mantenimiento de la infraestructura
+		Se deberá hacer mantenimiento, seguimiento y modificación de la infraestructura según sea necesario para asegurar que continúa
+ 		satisfaciendo los requerimientos del proceso que este emplea. Como parte del mantenimiento de la infraestructura, se deberá definir
+ 		hasta qué punto la infraestructura está bajo gestión de la configuración
+
+
+
+
+
+
+PROCESO DE GESTION DE CICLO DE VIDA
+-----------------------------------------
+Administra, a través de soluciones software, un producto, desde su inicio, pasando por su diseño y fabricación, hasta su servicio y eliminación. 
+En nuestro caso implementamos el proceso desarrollando el producto mediante un proceso unificado de desarrollo. 
+
+
+
+PROCESO DE GESTION DE CALIDAD
+----------------------------------
+La gestión de calidad se centra no solo a la calidad de un producto o servicio, sino que a los medios para obtenerla. Por lo tanto,
+la gestión de calidad utiliza al aseguramiento de la calidad y el control de los procesos para obtener una calidad más consistente
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+PROCESO DE PLANIFICACION DEL PROYECTO
+----------------------------------------------
+El objetivo de este proceso es establecer y planificar tiempos y costes del proyecto software.
+Esta política establece las expectativas de la organización para estimar los parámetros de la planificación, para definir compromisos
+internos y externos, y para desarrollar un plan para gestionar el proyecto.
+Este proceso lo hemos implementado realizando un documento en el que mostramos toda la planificación del proyecto.
+
+
+PROCESOS DE EVALUACION Y CONTROL DEL PROYECTO
+-----------------------------------------
+El objetivo de estos proyectos es comprobar que los trabajos se realicen bajo las estipulaciones organizacionales, 
+técnicas, contractuales y legales que rijan los mismos. Además, que se ejecuten dentro del tiempo y costo establecidos.
+La programación consiste por lo tanto en fijar, de modo aproximado, los instantes de inicio y terminación de cada 
+actividad. Algunas actividades pueden tener holgura y otras son actividades críticas.
+
+
+PROCESO DE GESTION DE LA DECISION
+-----------------------------------------
+A veces será necesario introducir algún cambio que no estaba previsto en el boceto. Así que se tomarán las decisiones pertinentes en una reunión.
+
+
+PROCESO DE GESTION DE RIESGOS
+-----------------------------------------
+La gestión de riesgos es un enfoque estructurado para manejar la incertidumbre relativa a una amenaza, a través de una secuencia de actividades 
+humanas que incluyen evaluación de riesgo, estrategias de desarrollo para manejarlo y mitigación del riesgo utilizando recursos gerenciales. 
+El objetivo de la gestión de riesgos es reducir diferentes riesgos relativos a un ámbito preseleccionado a un nivel aceptado por
+la sociedad. 
+Es aplicado en el establecimiento de estrategias de toda la empresa, diseñada para identificar eventos  potenciales que puedan afectar a la entidad
+y administrar los riesgos para proporcionar una seguridad e integridad razonable referente al logro de objetivos.
+
+
+PROCESO DE GESTION DE LA CONFIGURACION
+-----------------------------------------
+El proceso de gestión de la configuración es el proceso de aplicar procedimientos técnicos y administrativos a lo largo del ciclo de vida del software 
+para: identificar, definir y establecerla línea base de los elementos software en un sistema; controlar modificaciones y releases de loselementos; registrar
+e informar del estado de los elementos y peticiones de modificación; asegurarla completitud, consistencia y corrección de los elementos; y controlar el 
+almacenamiento, manipulación y entrega de los elementos.
+
+Este proceso consta de las siguientes actividades:
+
+	Implementación del proceso
+	Identificación de la configuración
+	Control de la configuración
+	Determinación del estado de la configuración
+	Evaluación de la configuración
+	Gestión de releases y entrega
+
+
+PROCESO DE GESTION  DE LA INFORMACION
+-----------------------------------------
+La empresa trabaja con una gran cantidad de información que necesita ser gestionada y ordenada. Este proceso es el encargado de gestionar y mantener 
+la configuración del software.
+
+
+PROCESO DE LA MEDICION
+---------------------------------
+En este proceso medimos y valoramos todos los procesos del ciclo de vida software.
+Este plan para realizar el proceso de medición y análisis puede estar incluido en el plan de proyecto, el cual se describe en el área de proceso 
+Planificación del Proyecto.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+PROCESOS DE DEFINICION DE REQUISITOS STAKEJOLDERS
+----------------------------------------------------
+El propósito es asegurar que el proyecto cumple con las expectativas de sus clientes  y de sus interesados, tanto externos como internos, siendo 
+el proceso que garantiza el vínculo entre lo que esperan los clientes y usuarios, y lo que los equipos de proyecto tienen que desarrollar.
+
+Son todas aquellas características observables que cualquier interesado desea que estén contenidas en el sistema. Como
+requisitos se incluyen las necesidades, deseos y expectativas del patrocinador, cliente, usuarios, y otros interesados.
+
+
+PROCESOS DE ANALISIS DE REQUISITOS DEL SISTEMA
+----------------------------------------------------
+El objetivo de este proceso es establecer y aceptar las funciones específicas. 
+Lo implementamos estableciendo las funcionalidades y la corrección de estas. 
+Especificamos como pueden iteraccionar con la máquina. 
+Lo realizamos mediante un diagrama de casos de uso. 
+Analizamos Requisitos:
+	Funcionales: Requerimientos de negocio y marketing. Normalmente un departamento independiente que desarrolla 
+	análisis funcionales acordes a la estrategia de negocio de la empresa o cliente.
+	No funcionales: Requisitos de calidad en el software, seguridad, disponibilidad, eficiencia, usabilidad.
+	Óptimo rendimiento. Tratándose de una aplicación Web: compatible con todos los navegadores, etc.
+
+PROCESO DE DISEÑO DE LA ARQUITECTURA DEL SISTEMA
+----------------------------------------------------
+
+Se hara una breve explicacion del proposito del sistema, la plataforma planteada, las partes que componen el sistema, asi como 
+las diversas etapas que desarrolla cada componente para procesar los datos requeridos.
+El diseño debe ser la estructura base que pueda solucionar todos los requerimientos actuales y pueda soportar
+la evolución de éstos en el transcurso del tiempo de forma satisfactoria.
+Diseñar los componentes y módulos que formarán el sistema/estructura, su relación e interacción llevarán a cabo 
+los requisitos funcionales y no funcionales. La selección de un tipo de aplicación y tecnologías determina en cierta
+medida al estilo arquitectural que se va a emplear.
+Para diseñar la arquitectura del sistema es importante tenemos en cuenta los intereses de los distintos agentes que participan:
+
+	Los usuarios del sistema,representados sobre los diagramas de casos de uso.
+	El propio sistema (tecnología, patrón de diseño, contexto), reflejando los requisitos no funcionales.
+	Objetivos y requisitos funcionales del área/departamento de negocio/marketing.
+	Metodología y requerimientos aplicados por el jefe de proyecto.
+
+
+
+PROCESO DE IMPLEMENTACION
+----------------------------------------------------
+
+La implementación de un sistema de información requiere técnicas estructuradas, personal dedicado y etapas secuenciales 
+que se deben ir ejecutando. A través de nuestra experiencia hemos entendido que cada compañía tiene diferentes necesidades
+y prioridades. Para satisfacer las necesidades específicas de nuestra empresa es necesario seguir nuestra probada metodología,
+ que entrega resultados consistentes y de calidad.
+Conviene que se defina y documente la infraestructura para cumplir los requerimientos del proceso que este emplea, considerando 
+los procedimientos, normas, herramientas y técnicas aplicables
+
+
+
+
+PROCESOS DE INTEGRACION DEL SISTEMA
+----------------------------------------------------
+La integración es un proceso que está cobrando cada vez mayor importancia. 
+Hay varias razones que justifican la integración:
+
+	Alinear los requisitos comunes de las diversas normas y marcos de referencia utilizados.
+	Reducir las duplicidades.
+	Reducir los procesos y procedimientos donde se puedan combinar.
+	Mejorar la eficacia y eficiencia de la organización.
+	Proporcionar ayuda al personal en el entendimiento de las necesidades del SG y cómo deben participar para garantizar su eficiencia
+
+El enfoque integrado se realiza, entre otras cosas, para:
+
+	Desarrollar una política conjunta.-
+	Establecer objetivos y metas coherentes.
+	Identificar aspectos y peligros y evaluar los riesgos e impactos relacionados.
+	Definir el proceso de planificación del negocio.
+	Definir de forma conjunta la gestión de los riesgos
+
+PROCESO DE COMPROBACION DE REQUISITOS DEL SISTEMA
+----------------------------------------------------
+
+
+PROCESOS DE APOYO A LA ACEPTACION DEL SOFTWARE
+----------------------------------------------------
+ 
+El uso de cualquier producto de software tiene que estar justificado por las ventajas que ofrece. Sin embargo, 
+antes de empezar a usarlo es muy difícil determinar si sus ventajas realmente justifican su uso. El mejor instrumento 
+para esta determinación es la llamada 'prueba de aceptación'. En esta prueba se evalúa el grado de calidad del software 
+con relación a todos los aspectos relevantes para que el uso del producto se justifique.
+
+(**)Para eliminar la influencia de conflictos de intereses, y para que sea lo más objetiva posible, la prueba de aceptación
+nunca debería ser responsabilidad de los ingenieros de software que han desarrollado el producto 
+
+
+
+PROCESO DE OPERACION DEL SOFTWARE
+----------------------------------------------------
+
+
+PROCESO DE MANTENIMIENTO DEL SOFTWARE
+----------------------------------------------------
+El proceso de mantenimiento contiene las actividades y tareas del responsable de mantenimiento.
+Este proceso se inicia cuando el producto software sufre modificaciones en el código y la documentación asociada, 
+debido a un problema o a la necesidad de mejora o adaptación. El objetivo es modificar el producto software existente 
+preservando su integridad. 
+
+
+PROCESOS DE RETIRADA DEL SOFTWARE
+----------------------------------------------------
+Este proceso incluye la migración y retirada del producto software. El proceso termina con 
+la retirada del producto software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

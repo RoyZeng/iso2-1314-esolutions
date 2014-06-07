@@ -1,0 +1,92 @@
+
+
+Estructura de procesos SW
+Modelo de ciclo de vida: incremental
+Modelo de procesos ISO 12207
+Metodología de desarrollo PUD
+
+
+Existen distintas formas de desarrollar software en la actualidad que nos indican cómo debemos dividir en etapas un proyecto, 
+las tareas que se llevan a cabo en cada fase, las restricciones a aplicar, herramientas a utilizar, 
+las salidas que se producen y cuando se producen y por supuesto nos ayudan en la gestión del proyecto.
+Algunas de las metodologías más utilizadas son:
+
+- PUD (Proceso Unificado de Desarrollo).
+- Metodología ágil Scrum.
+
+Para Esolutions, un proceso software debe evolucionar a medida que avanza la organización, es decir, estar limitado por las herramientas utilizadas,
+las tecnologías, los trabajadores y los patrones de la organización
+Las metodologías nos indican la manera de desarrollar el proyecto. Esolutions ha decidido tomar como metodología de desarrollo el Proceso Unificado de Desarrollo(PUD) 
+que implica la realización de un conjunto de ciclos que representan la vida del sistema a desarrollar.
+
+PUD es un conjunto de actividades necesarias para transformar los requisitos de usuario en un sistema software.
+Más concretamente se define como “Marco de trabajo genérico que puede especializarse para una gran variedad de sistemas software,
+para diferentes áreas de aplicación, de diferentes tipos de organizaciones, diferentes niveles de aptitud y diferentes tamaños de proyecto”.
+
+Las características básicas del proceso unificado de desarrollo son tres:
+	-Dirigido por casos de uso.  Esta dirigido por casos de uso, en el que es fundamental conocer lo que los usuarios quieren para poder desarrollar un sistema que
+	se adapte a sus necesidades. 
+	Un caso de uso es un fragmento de funcionalidad del sitema que proporciona un resultado de valor al usuario. 
+	En el PDU los CDU tienen que encajar en la arquitectura y la arquitectura debe soportar el desarrollo de los CDU. Tanto la arquitectura como los CDU
+ 	deben desarrollarse en paralelo.
+		
+	-Centrado en la arquitectura.Centrado en la arquitectura. Es un conjunto de decisiones significativas acerca de la organización de un sistema software, 
+	la selección de los elementos estructurales a partir de los cuales se compone el sistema, las interfaces entre ellos, su comportamiento, sus colaboraciones,
+	y su composición.
+	Los casos de uso deben encajar en la arquitectura, en nuestro caso será una arquitectura ¿multicapa?.
+	
+	-Iterativo e incremental.El desarrollo del producto software se divide en un conjunto de iteraciones que producen incrementos en la funcionalidad del sistema 
+	software que se está desarrollando.
+	Al dividir el proyecto en iteraciones se reduce el riesgo a los costes de un solo incremento, así como de retrasos en el calendario puesto que se abordan
+	 primero los riesgos mas importantes.
+	En cada iteración los desarrolladores identifican y especifican los casos de uso relevantes, crean un diseño utilizando la arquitectura seleccionada 
+	como guía, implementan el diseño mediante componentes, y verifican que los componentes satisfacen los casos de uso.
+	
+
+La relación entre las tres características mencionadas anteriormente es que la arquitectura proporciona la estructura sobre la cual guiar las iteraciones, mientras que los casos de uso definen
+los objetivos y dirigen eltrabajo de cada iteración.
+Lo que la empresa busca es que el trabajo se realice poco a poco, de forma incremental, es decir, 
+hasta que un proceso no termina, no puede empezar el siguiente. También debemos dividir nuestros proyectos en diferentes subproyectos que iremos 
+realizando uno detrás de otro dependiendo del orden especificado con anterioridad.
+
+Para poder desarrollar un buen modelo trabajo, PUD nos obliga a dirigir nuestros proyectos por casos de uso, por lo que tendremos que hacer una
+buena especificación de requisitos inicial que nos ayude con la división en subproyectos y a elegir el orden en el que se deben realizar las distintas etapas.
+
+A las distintas etapas las llamaremos versiones del proyecto, que habrá que ir mejorando e incrementando, pero nos serán muy útiles para que 
+el cliente pueda ver en que estado está su proyecto y si está conforme con todo lo realizado hasta el momento.
+
+Todos las distintas versiones se irán añadiendo al Code de nuestro proyecto para una mayor facilidad de trabajo en equipo.
+
+La organización del trabajo se hace en distintas fases bien especificadas:
+
+	*Fase de inicio: Consiste en dar una primera visión aproximada del producto a desarrollar. Durante esta fase se determinará la viabilidad del 
+	proyecto, se describirán brevemente los requisitos identificados en el producto que se pretende desarrollar. Implica hacer un modelo de casos
+ 	de uso en donde se describen los requisitos funcionales identificados, una descripción de posibles riesgos que puedan afectar al desarrollo y
+	un plan de iteraciones que describa lo que se hará en la fase de elaboración. 
+	
+
+	*Fase de elaboración: Se compone de un par de iteraciones en las que se procede a detallar los requisitos identificados en la fase de inicio.Lo que se 
+	debe obtener en esta fase es una visión del sistema centrada en la arquitectura en la que se hayan establecido las capas software que se van a implementar
+ 	junto con los paquetes y subsistemas que aparecerán en dicho producto.
+	Se elige el núcleo de la arquitectura y se terminan de identificar la mayoría de los requisitos del sistema obteniendo un listado de requisitos
+ 	funcionales detallados y más cercanos a los requisitos reales. . Implica: un modelo de casos de uso en donde se detallen con más detalle los casos de uso 
+	identificados en la fase de inicio y se incorporen nuevos requisitos que no se tuvieron en cuenta; un modelo de diseño que estará compuesto por los diagramas de clases
+ 	y diagramas de interacción; un modelo de datos que estará formado por el conjunto de esquemas que representan las estrategias de persistencia 
+	y un documento de la arquitectura que contiene las ideas principales del diseño de la arquitectura.
+
+	
+	*Fase de Construcción: esta fase se corresponde con la codificación de los requisitos identificados. Esta fase contiene una cantidad de iteraciones
+ 	muy variable y obtenemos como resultado final el código y los componentes software necesarios. Implica: un modelo de diseño en donde se termine de
+ 	detallar el diseño de la aplicación; un modelo de implementación formado por un conjunto de diagramas de componentes en donde puedan agruparse las 
+ 	clases con funciones cooperativas; un modelo de pruebas que estará formado por un conjunto de diseños de casos de prueba; un modelo de despliegue que
+ 	represente la forma en que se van a ejecutar los componentes representados en el modelo de componentes y un modelo de distribución en donde se muestre
+ 	de forma abstracta el funcionamiento físico del sistema.
+
+
+	*Transicion. El proyecto se convierte en la versión beta de lo que será el producto final, y a partir de aquí se corregirán todos los  
+        problemas y defectos que se detecten y se incorporarán mejoras para la versión final.
+	Al final de esta fase deberá obtenerse el producto ejecutable con los manuales y demás elementos necesarios para su puesta en marcha. 
+	Implica: un modelo de implementación con los pequeños cambios que hayan tenido que hacerse en la implementación con relación a la fase anterior;
+	un modelo de despliegue y un modelo de distribución.
+	
+
