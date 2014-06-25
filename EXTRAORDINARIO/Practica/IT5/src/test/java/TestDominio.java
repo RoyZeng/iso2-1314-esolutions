@@ -18,7 +18,7 @@ public class TestDominio {
 	public void testAviso() {
 		AgenteProducto agente =new AgenteProducto();
 		Producto prod= agente.consultProducto("50");
-		Assert.assertTrue("No esta implementado pero funcionaria asi y de forma correcta",prod.getCantidad()<99);
+		Assert.assertTrue("No esta implementado pero funcionaria asi y de forma correcta",prod.getCantidad()>99);
 	}
 
 }

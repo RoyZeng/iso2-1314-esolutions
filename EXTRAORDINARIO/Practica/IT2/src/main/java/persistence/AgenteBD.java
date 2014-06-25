@@ -48,6 +48,19 @@ public class AgenteBD {
 		}
 		return res;
 	}
+	public int executeUpdate(String sentence){
+		int res = 0;
+		try {
+			// Creamos una sentencia SQL
+			Statement sentenciaSQL = conexion.createStatement();
+			// Ejecutamos la sentencia
+			sentenciaSQL.executeQuery("USE mercadonatest;");
+			res = sentenciaSQL.executeUpdate(sentence);
+		} catch (SQLException e) {
+			System.err.println("SQL CONEXION ERROR: "+e.toString());
+		}
+		return res;
+	}
 	
 	public boolean close(){
 		boolean success=true;

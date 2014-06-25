@@ -30,7 +30,7 @@ Assert.assertEquals(VentanaLogin.validarUsuario("05713540","8999"),false);
 	@Test
 	public void testAñadeProducto() throws IOException {
 		AgenteProducto agente =new AgenteProducto();
-		agente.insertProducto(new Producto(0,"nombre",1,"tipo","fecha"));
+		agente.insertProducto(new Producto(99,"nombre",1,"tipo","fecha"));
 		assertTrue(true);
 	}
 
