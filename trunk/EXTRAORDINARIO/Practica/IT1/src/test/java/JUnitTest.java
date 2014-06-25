@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class TestJUnit {
+public class JUnitTest {
 
 	@Before
 	public void setUp() throws Exception {
